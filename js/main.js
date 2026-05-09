@@ -342,7 +342,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <p class="project-quickview-desc"></p>
           <div class="project-quickview-tags"></div>
           <ul class="project-quickview-points"></ul>
-          <a class="btn-primary-custom project-quickview-cta" href="/contact/start-your-project/">Start Similar Project <i class="ri-arrow-left-line"></i></a>
+          <a class="btn-primary-custom project-quickview-cta" href="#contact">Start Similar Project <i class="ri-arrow-left-line"></i></a>
         </article>
       </aside>
     `;
@@ -381,7 +381,7 @@ document.addEventListener('DOMContentLoaded', () => {
       quickViewDesc.textContent = description;
       quickViewTags.innerHTML = tags.map((tag) => `<span class="project-quickview-tag">${tag}</span>`).join('');
       quickViewPoints.innerHTML = points.map((point) => `<li>${point}</li>`).join('');
-      quickViewCTA.setAttribute('href', `/contact/start-your-project/?project=${encodeURIComponent(title)}`);
+      quickViewCTA.setAttribute('href', '#contact');
 
       quickView.classList.add('open');
       quickView.setAttribute('aria-hidden', 'false');
@@ -476,10 +476,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Swiper Init ---
   if (typeof Swiper !== 'undefined' && document.querySelector('.testimonial-swiper')) {
+    const testimonialSwiperElement = document.querySelector('.testimonial-swiper');
+    const testimonialSlidesCount = testimonialSwiperElement ? testimonialSwiperElement.querySelectorAll('.swiper-slide').length : 0;
+    const enableLoop = testimonialSlidesCount > 3;
+
     new Swiper('.testimonial-swiper', {
       slidesPerView: 1,
       spaceBetween: 24,
-      loop: true,
+      loop: enableLoop,
+      rewind: !enableLoop,
+      watchOverflow: true,
       autoplay: {
         delay: 5000,
         disableOnInteraction: false,

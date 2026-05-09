@@ -1,0 +1,22 @@
+{
+  "name": "Salem Gomaa Portfolio",
+  "short_name": "Salem Portfolio",
+  "description": "Full-Stack Laravel Developer portfolio website.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#111a2f",
+  "theme_color": "#111a2f",
+  "icons": [
+    {
+      "src": "./favicon.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
