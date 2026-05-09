@@ -1,0 +1,861 @@
+﻿<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <meta name="description" content="Full-Stack Laravel Developer building fast, elegant, conversion-focused web platforms." />
+    <meta name="keywords" content="Laravel developer, Full-Stack developer, Web Development, Portfolio, Landing Page" />
+    <meta name="author" content="Salem Gomaa" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Salem Gomaa — Full-Stack Laravel Developer" />
+    <meta property="og:description" content="Elegant and high-performance Laravel web platforms built to grow real businesses." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Salem Gomaa — Full-Stack Laravel Developer</title>
+    <link rel="canonical" href="/" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#111a2f" />
+    <meta name="msapplication-TileColor" content="#111a2f" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="landing-en">
+    <!-- Preloader -->
+    <div class="preloader" aria-hidden="true">
+      <div class="preloader-inner">
+        <div class="preloader-logo">Salem <span class="text-accent">Gomaa</span></div>
+        <div class="preloader-text pb-3" style="font-size: 0.9rem; color: var(--text-muted); font-weight: 500">Preparing experience...</div>
+        <div class="preloader-bar"></div>
+      </div>
+    </div>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="bg-orb bg-orb-1" aria-hidden="true"></div>
+    <div class="bg-orb bg-orb-2" aria-hidden="true"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar-main" role="navigation" aria-label="Main navigation">
+      <div class="nav-container">
+        <a href="#hero" class="nav-brand" aria-label="Salem Gomaa - Home">
+          <span class="brand-mark" aria-hidden="true">
+            <span class="brand-mark-core"></span>
+            <span class="brand-initials">SJ</span>
+          </span>
+          <span class="brand-wordmark">
+            <span class="brand-name">Portfolio</span>
+          </span>
+        </a>
+        <div class="nav-links">
+          <a href="#hero" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#education" class="nav-link">Resume</a>
+          <a href="#offered-services" class="nav-link">Services</a>
+          <a href="#projects" class="nav-link">Portfolio</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <button
+            id="themeToggle"
+            aria-label="Toggle theme"
+            style="
+              background: transparent;
+              border: none;
+              font-size: 1.4rem;
+              cursor: pointer;
+              color: var(--text-primary);
+              display: flex;
+              align-items: center;
+              padding: 0;
+              transition: var(--transition);
+            "
+          >
+            <i class="ri-moon-fill" style="color: var(--accent); transition: var(--transition)"></i>
+          </button>
+          <a href="#contact" class="nav-cta">Connect</a>
+        </div>
+        <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" aria-hidden="true" inert>
+      <div class="mob-menu-header">
+        <span class="mob-menu-brand">
+          <span class="brand-mark" aria-hidden="true">
+            <span class="brand-mark-core"></span>
+            <span class="brand-initials">SJ</span>
+          </span>
+          <span class="brand-wordmark">
+            <span class="brand-name">Salem Gomaa</span>
+            <span class="brand-tag">DIGITAL CRAFT STUDIO</span>
+          </span>
+        </span>
+        <button class="mob-menu-close"><i class="ri-close-line"></i></button>
+      </div>
+      <div class="mob-menu-body">
+        <a href="#hero" class="mob-link active">Home</a>
+        <a href="#about" class="mob-link">About</a>
+        <a href="#education" class="mob-link">Resume</a>
+        <a href="#offered-services" class="mob-link">Services</a>
+        <a href="#projects" class="mob-link">Portfolio</a>
+        <a href="#contact" class="mob-link">Contact</a>
+      </div>
+      <div class="mob-menu-footer">
+        <button id="themeToggleMobile" class="theme-toggle-mob"><i class="ri-moon-fill"></i> Dark Mode</button>
+        <div class="mob-socials">
+          <a href="https://github.com/salemgomaa" target="_blank"><i class="ri-github-fill"></i></a>
+          <a href="https://wa.me/201035619688" target="_blank"><i class="ri-whatsapp-fill"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero-section" id="hero">
+      <div class="container-custom">
+        <div class="hero-split reveal">
+          <!-- LEFT: Copy -->
+          <div class="hero-split__copy">
+            <p class="hero-split__greeting">Hello 👋, I am</p>
+            <h1 class="hero-split__name">Salem Gomaa</h1>
+            <p class="hero-split__role"><i class="ri-code-s-slash-line"></i> Full-Stack Laravel Developer</p>
+            <p class="hero-split__brief">
+              I turn early-stage ideas into fast, scalable web platforms that help businesses grow and convert — from first wireframe to production
+              launch.
+            </p>
+            <div class="hero-split__actions">
+              <a href="#contact" class="btn-primary-custom"><i class="ri-download-2-line"></i> Download CV</a>
+              <a href="#projects" class="btn-outline-custom"><i class="ri-folder-line"></i> View Projects</a>
+            </div>
+            <div class="hero-split__socials">
+              <a href="https://github.com/salemgomaa" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+              <a href="https://wa.me/201035619688" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"
+                ><i class="ri-whatsapp-fill"></i
+              ></a>
+              <a href="#contact" aria-label="Email"><i class="ri-mail-line"></i></a>
+            </div>
+          </div>
+          <!-- RIGHT: Visual -->
+          <div class="hero-split__visual">
+            <div class="hero-split__orb" aria-hidden="true"></div>
+            <div class="hero-split__ring" aria-hidden="true"></div>
+            <div class="hero-split__frame">
+              <img src="images/myImages.webp" alt="Salem Gomaa" loading="eager" />
+            </div>
+            <span class="hero-split__chip reveal"><i class="ri-terminal-box-line"></i> Open to Work</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. About -->
+    <section class="section portfolio-flow-section about-showcase" id="about">
+      <div class="about-showcase__inner">
+        <!-- LEFT: Copy -->
+        <div class="about-showcase__copy reveal">
+          <div class="section-badge"><i class="ri-user-star-line"></i> About Me</div>
+          <h2 class="section-title">I Build What <span class="text-gradient">Others Only Plan</span></h2>
+          <div class="about-showcase__prose">
+            <p>
+              I'm Salem Gomaa — a Full-Stack Laravel developer who specializes in turning early-stage ideas into fully functional, market-ready web
+              platforms. Since 2021 I've worked with founders, small teams, and growing businesses to ship products that actually get used — not just
+              launched.
+            </p>
+            <p>
+              My approach is simple: understand the business goal first, then engineer the fastest path to a working product. Every line of code I
+              write is optimized for <strong>performance</strong>, <strong>scalability</strong>, and <strong>real conversion</strong> — because a
+              beautiful website that doesn't generate leads is just an expense.
+            </p>
+          </div>
+          <!-- Compact Stats -->
+          <div class="about-showcase__metrics">
+            <div class="about-showcase__metric">
+              <span class="about-showcase__metric-num" data-count="30" data-suffix="+">0</span>
+              <span class="about-showcase__metric-lbl">Projects Shipped</span>
+            </div>
+            <div class="about-showcase__metric-sep"></div>
+            <div class="about-showcase__metric">
+              <span class="about-showcase__metric-num" data-count="15" data-suffix="+">0</span>
+              <span class="about-showcase__metric-lbl">Happy Clients</span>
+            </div>
+            <div class="about-showcase__metric-sep"></div>
+            <div class="about-showcase__metric">
+              <span class="about-showcase__metric-num" data-count="4" data-suffix=" yrs">0</span>
+              <span class="about-showcase__metric-lbl">In The Field</span>
+            </div>
+          </div>
+          <div class="about-showcase__cta">
+            <a href="#projects" class="btn-primary-custom"><i class="ri-folder-line"></i> View My Work</a>
+            <a href="#contact" class="btn-outline-custom"><i class="ri-chat-smile-2-line"></i> Let's Talk</a>
+          </div>
+        </div>
+        <!-- RIGHT: Visual -->
+        <div class="about-showcase__visual">
+          <div class="about-showcase__orb" aria-hidden="true"></div>
+          <div class="about-showcase__ring about-showcase__ring--1" aria-hidden="true"></div>
+          <div class="about-showcase__ring about-showcase__ring--2" aria-hidden="true"></div>
+          <div class="about-showcase__photo-wrap reveal">
+            <img src="images/myImages.webp" alt="Salem Gomaa" loading="lazy" />
+          </div>
+          <!-- Floating chips -->
+          <span class="about-showcase__chip about-showcase__chip--1 reveal"><i class="ri-code-s-slash-line"></i> Laravel</span>
+          <span class="about-showcase__chip about-showcase__chip--2 reveal"><i class="ri-speed-line"></i> Fast Sites</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Education -->
+    <section class="section bg-darker portfolio-flow-section" id="education">
+      <div class="container-custom">
+        <div class="text-center reveal">
+          <div class="section-badge mx-auto">Education</div>
+          <h2 class="section-title">Academic Journey with <span class="text-gradient">practical execution</span></h2>
+          <p class="section-desc mx-auto">Management Information Systems background with hands-on web product development since 2021.</p>
+        </div>
+        <div class="row g-4 mt-4">
+          <div class="col-lg-4 col-md-6 reveal delay-1">
+            <article class="education-luxe-card h-100">
+              <div class="education-icon"><i class="ri-graduation-cap-line"></i></div>
+              <h3>Bachelor of MIS</h3>
+              <p class="edu-meta">2021 - 2025 | Helwan University</p>
+              <p class="edu-body">Strong foundation in information systems, database design, and business-oriented software solutions.</p>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6 reveal delay-2">
+            <article class="education-luxe-card h-100">
+              <div class="education-icon"><i class="ri-code-box-line"></i></div>
+              <h3>Full-Stack Practice Track</h3>
+              <p class="edu-meta">Started in 2021</p>
+              <p class="edu-body">Real-world builds using Laravel, APIs, and modern frontend stacks for production-ready platforms.</p>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6 reveal delay-3">
+            <article class="education-luxe-card h-100">
+              <div class="education-icon"><i class="ri-lightbulb-flash-line"></i></div>
+              <h3>Continuous Learning</h3>
+              <p class="edu-meta">2026 - Now</p>
+              <p class="edu-body">Focused on Laravel architecture, UI systems, performance optimization, and conversion-first UX.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Skills -->
+    <section class="section portfolio-flow-section" id="skills">
+      <div class="container-custom">
+        <div class="section-head text-center reveal">
+          <div class="section-badge mx-auto">Skills</div>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-desc mx-auto">Core tools and capabilities I use to design, build, and scale web products.</p>
+        </div>
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-5">
+            <div class="reveal">
+              <p class="section-desc portfolio-section-lead">
+                A balanced stack across backend engineering, frontend quality, and deployment-ready performance standards.
+              </p>
+              <div class="skill-pill-cloud mt-4">
+                <span class="skill-pill">HTML5</span>
+                <span class="skill-pill">CSS3 / Sass</span>
+                <span class="skill-pill">JavaScript ES6+</span>
+                <span class="skill-pill">TypeScript</span>
+                <span class="skill-pill">React & Next.js</span>
+                <span class="skill-pill">Laravel</span>
+                <span class="skill-pill">PHP</span>
+                <span class="skill-pill">MySQL</span>
+                <span class="skill-pill">Performance</span>
+                <span class="skill-pill">Technical SEO</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="skill-matrix-card reveal-right">
+              <div class="skill-bar-container">
+                <div class="skill-bar-header"><span>Frontend Architecture</span><span>96%</span></div>
+                <div class="skill-bar">
+                  <div class="skill-bar-fill" data-width="96"></div>
+                </div>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar-header"><span>Backend Development</span><span>90%</span></div>
+                <div class="skill-bar">
+                  <div class="skill-bar-fill" data-width="90"></div>
+                </div>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar-header"><span>UI/UX Implementation</span><span>94%</span></div>
+                <div class="skill-bar">
+                  <div class="skill-bar-fill" data-width="94"></div>
+                </div>
+              </div>
+              <div class="skill-bar-container mb-0">
+                <div class="skill-bar-header"><span>Optimization & SEO</span><span>92%</span></div>
+                <div class="skill-bar">
+                  <div class="skill-bar-fill" data-width="92"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Work Experience -->
+    <section class="section bg-darker portfolio-flow-section" id="work-experience">
+      <div class="container-custom">
+        <div class="section-head text-center reveal">
+          <div class="section-badge mx-auto">Experience</div>
+          <h2 class="section-title">Work Experience</h2>
+          <p class="section-desc mx-auto">My professional path across real client work, product building, and delivery.</p>
+        </div>
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-6">
+            <div class="reveal">
+              <p class="section-desc portfolio-section-lead">
+                From 2021 onward, I have delivered business websites and Laravel platforms with production standards and growth-ready structure.
+              </p>
+              <div class="work-highlight-card mt-4">
+                <h3>Delivery Approach</h3>
+                <p>Business objective first, UX clarity second, then scalable implementation and post-launch iteration.</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="tag">Discovery</span>
+                  <span class="tag">UX Strategy</span>
+                  <span class="tag">Build & Launch</span>
+                  <span class="tag">Growth Support</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="timeline reveal-right">
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-date">2026 - Present</div>
+                <h3 class="timeline-title">Freelance Full-Stack Laravel Developer</h3>
+                <div class="timeline-company">Independent Client Projects</div>
+                <p class="timeline-desc">Building custom Laravel systems, business websites, and conversion-focused landing pages.</p>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-date">2021 - 2024</div>
+                <h3 class="timeline-title">Full-Stack Developer</h3>
+                <div class="timeline-company">Agency & Startup Collaborations</div>
+                <p class="timeline-desc">Delivered web products from frontend interfaces to backend APIs and admin dashboards.</p>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-date">2021</div>
+                <h3 class="timeline-title">Started Web Development Journey</h3>
+                <div class="timeline-company">Self-driven Learning & Practice</div>
+                <p class="timeline-desc">Built initial portfolio projects and moved quickly into client-facing implementation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Offered Services -->
+    <section class="section portfolio-flow-section" id="offered-services">
+      <div class="container-custom">
+        <div class="text-center reveal">
+          <div class="section-badge mx-auto">Offered Services</div>
+          <h2 class="section-title">Services crafted for <span class="text-gradient">business growth</span></h2>
+          <p class="section-desc mx-auto">End-to-end web delivery from strategy to launch, with clean communication and premium execution.</p>
+        </div>
+        <div class="row g-4 mt-4">
+          <div class="col-lg-4 col-md-6 reveal delay-1">
+            <article class="offered-service-card h-100">
+              <div class="offered-service-icon"><i class="ri-layout-4-line"></i></div>
+              <h3>Premium UI Design</h3>
+              <p>Elegant user interfaces that elevate brand value and simplify user actions.</p>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6 reveal delay-2">
+            <article class="offered-service-card h-100">
+              <div class="offered-service-icon"><i class="ri-code-s-slash-line"></i></div>
+              <h3>Full-Stack Development</h3>
+              <p>Secure and scalable frontend-backend architecture tailored to your product goals.</p>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6 reveal delay-3">
+            <article class="offered-service-card h-100">
+              <div class="offered-service-icon"><i class="ri-smartphone-line"></i></div>
+              <h3>Responsive Perfection</h3>
+              <p>Consistent, polished experience across desktop, tablet, and mobile devices.</p>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6 reveal delay-1">
+            <article class="offered-service-card h-100">
+              <div class="offered-service-icon"><i class="ri-speed-up-line"></i></div>
+              <h3>Performance Optimization</h3>
+              <p>Faster loading and stronger Core Web Vitals for better retention and conversion.</p>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6 reveal delay-2">
+            <article class="offered-service-card h-100">
+              <div class="offered-service-icon"><i class="ri-search-eye-line"></i></div>
+              <h3>Technical SEO</h3>
+              <p>Search-friendly structure and metadata implementation for stronger organic visibility.</p>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6 reveal delay-3">
+            <article class="offered-service-card h-100">
+              <div class="offered-service-icon"><i class="ri-customer-service-2-line"></i></div>
+              <h3>Post-Launch Support</h3>
+              <p>Maintenance and iterative improvements to keep your platform growing reliably.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Projects -->
+    <section class="section bg-darker portfolio-flow-section" id="projects">
+      <div class="container-custom">
+        <div class="text-center reveal">
+          <div class="section-badge mx-auto">Projects</div>
+          <h2 class="section-title">Selected work with <span class="text-gradient">measurable outcomes</span></h2>
+          <p class="section-desc mx-auto">A focused set of real projects built for clarity, trust, and better conversion rates.</p>
+        </div>
+        <div class="row g-4 mt-4 projects-equal-grid">
+          <div class="col-lg-4 col-md-6 reveal delay-1 project-item" data-category="ecommerce">
+            <div class="project-card">
+              <div class="project-thumb">
+                <img
+                  src="images\mockup-all-framed (1).png"
+                  alt="Preview of Elyan Skincare eCommerce website"
+                  class="project-thumb-image"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="overlay">
+                  <a class="overlay-btn" href="#contact" target="_blank" rel="noopener noreferrer" aria-label="Visit Elyan Skincare project">
+                    <i class="ri-arrow-left-up-line"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-category">eCommerce Website</div>
+                <h3 class="project-name">Elyan Skincare</h3>
+                <p class="project-desc-brief">
+                  A premium online store for skincare products, designed to provide a luxurious shopping experience and seamless checkout flow.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">UI/UX</span>
+                  <span class="project-tag">E-commerce</span>
+                  <span class="project-tag">Performance</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 reveal delay-2 project-item" data-category="landing">
+            <div class="project-card">
+              <div class="project-thumb">
+                <img
+                  src="images\mockup-all-framed (5).png"
+                  alt="Preview of Almasdar electro-mechanical company website"
+                  class="project-thumb-image"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="overlay">
+                  <a class="overlay-btn" href="https://almasdarco.ly/" target="_blank" rel="noopener noreferrer" aria-label="Visit Almasdar project">
+                    <i class="ri-arrow-left-up-line"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-category">Corporate Website</div>
+                <h3 class="project-name">Almasdar EM Contracting</h3>
+                <p class="project-desc-brief">Professional company profile website designed to communicate services and build client trust.</p>
+                <div class="project-tags">
+                  <span class="project-tag">Company Profile</span>
+                  <span class="project-tag">Lead Generation</span>
+                  <span class="project-tag">SEO Structure</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 reveal delay-3 project-item" data-category="landing">
+            <div class="project-card">
+              <div class="project-thumb">
+                <img
+                  src="images\mockup-all-framed.png"
+                  alt="Preview of Jannat Alkhuld nursery website"
+                  class="project-thumb-image"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="overlay">
+                  <a
+                    class="overlay-btn"
+                    href="https://jannatalkhuld.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit Jannat Alkhuld project"
+                  >
+                    <i class="ri-arrow-left-up-line"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-category">Local Business Website</div>
+                <h3 class="project-name">Jannat Alkhuld Nursery</h3>
+                <p class="project-desc-brief">Service-focused business site with structured content and a cleaner customer inquiry flow.</p>
+                <div class="project-tags">
+                  <span class="project-tag">Local SEO</span>
+                  <span class="project-tag">Content Strategy</span>
+                  <span class="project-tag">Responsive UI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 reveal delay-1 project-item" data-category="webapp">
+            <div class="project-card">
+              <div class="project-thumb">
+                <img
+                  src="images\mockup-all-framed (8).png"
+                  alt="Preview of tech articles blog"
+                  class="project-thumb-image"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="overlay">
+                  <a
+                    class="overlay-btn"
+                    href="https://salemgomaaibrahim717-stack.github.io/-/index.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit tech blog project"
+                  >
+                    <i class="ri-arrow-left-up-line"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-category">Content Platform</div>
+                <h3 class="project-name">Tech Articles Blog</h3>
+                <p class="project-desc-brief">A structured reading experience with SEO-friendly architecture and fast page rendering.</p>
+                <div class="project-tags">
+                  <span class="project-tag">Blog Platform</span>
+                  <span class="project-tag">Structured Content</span>
+                  <span class="project-tag">Fast Load</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 reveal delay-2 project-item" data-category="landing">
+            <div class="project-card">
+              <div class="project-thumb">
+                <img
+                  src="images\mockup-all-framed (2) (2).png"
+                  alt="Preview of premium dental clinic website"
+                  class="project-thumb-image"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="overlay">
+                  <a
+                    class="overlay-btn"
+                    href="https://salemgomaaibrahim717-stack.github.io/premium-dental-website/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit dental clinic project"
+                  >
+                    <i class="ri-arrow-left-up-line"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-category">Medical Services Website</div>
+                <h3 class="project-name">Premium Dental Website</h3>
+                <p class="project-desc-brief">Modern clinic website showcasing services, team, and appointment flow with trust-driven design.</p>
+                <div class="project-tags">
+                  <span class="project-tag">Clinic Website</span>
+                  <span class="project-tag">Conversion Focus</span>
+                  <span class="project-tag">Brand Positioning</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 reveal delay-3 project-item" data-category="landing">
+            <div class="project-card">
+              <div class="project-thumb">
+                <img
+                  src="images/myWork2 (1).png"
+                  alt="Preview of web design agency website"
+                  class="project-thumb-image"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="overlay">
+                  <a class="overlay-btn" href="#contact" aria-label="Start a similar agency project">
+                    <i class="ri-arrow-left-up-line"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-category">Corporate Website</div>
+                <h3 class="project-name">Web Design Agency</h3>
+                <p class="project-desc-brief">
+                  A dynamic and creative portfolio website for a web design agency, focused on showcasing services and generating high-quality leads.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Custom Design</span>
+                  <span class="project-tag">Animations</span>
+                  <span class="project-tag">Lead Generation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5 reveal">
+          <a href="#contact" class="btn-outline-custom">
+            <i class="ri-apps-2-line"></i>
+            Start a Similar Project
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Testimonials -->
+    <section class="section portfolio-flow-section" id="testimonials">
+      <div class="container-custom">
+        <div class="text-center reveal">
+          <div class="section-badge mx-auto">Testimonials</div>
+          <h2 class="section-title">Client feedback after <span class="text-gradient">real delivery</span></h2>
+          <p class="section-desc mx-auto">Trusted collaboration, clean execution, and clear business impact.</p>
+        </div>
+        <div class="mt-5 reveal delay-2">
+          <div class="swiper testimonial-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-card">
+                  <div class="testimonial-quote">"</div>
+                  <p class="testimonial-text">
+                    Our platform redesign elevated the brand image instantly and increased qualified leads in the first month.
+                  </p>
+                  <div class="testimonial-author">
+                    <div class="testimonial-avatar">A.S</div>
+                    <div class="testimonial-info">
+                      <h4>Ahmed Said</h4>
+                      <p>Technology Company Director</p>
+                    </div>
+                  </div>
+                  <div class="testimonial-stars">
+                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                    ><i class="ri-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-card">
+                  <div class="testimonial-quote">"</div>
+                  <p class="testimonial-text">
+                    Every milestone was delivered clearly, and the final website became faster and easier for customers to use.
+                  </p>
+                  <div class="testimonial-author">
+                    <div class="testimonial-avatar">N.M</div>
+                    <div class="testimonial-info">
+                      <h4>Nora Mohamed</h4>
+                      <p>eCommerce Store Owner</p>
+                    </div>
+                  </div>
+                  <div class="testimonial-stars">
+                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                    ><i class="ri-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-card">
+                  <div class="testimonial-quote">"</div>
+                  <p class="testimonial-text">
+                    The balance between premium design and top performance made a visible difference in visitor engagement.
+                  </p>
+                  <div class="testimonial-author">
+                    <div class="testimonial-avatar">K.A</div>
+                    <div class="testimonial-info">
+                      <h4>Khaled Abdullah</h4>
+                      <p>Entrepreneur</p>
+                    </div>
+                  </div>
+                  <div class="testimonial-stars">
+                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                    ><i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination mt-4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Call to Action and Contact -->
+    <section class="section bg-darker portfolio-flow-section" id="contact">
+      <div class="container-custom">
+        <div class="section-head text-center reveal">
+          <div class="section-badge mx-auto">Contact</div>
+          <h2 class="section-title">Let's Build Something Great</h2>
+          <p class="section-desc mx-auto">Share your idea and let's turn it into a premium, high-performing web product.</p>
+        </div>
+        <div class="cta-contact-shell reveal-scale">
+          <div class="row g-4 align-items-stretch">
+            <div class="col-lg-5">
+              <div class="cta-contact-main h-100">
+                <h3 class="h4 fw-bold mb-2">Ready to build your <span class="text-gradient">next web product?</span></h3>
+                <p class="section-desc" style="max-width: 100%">
+                  Share your idea and get a clear execution direction within 24 hours: UI direction, architecture scope, and launch priorities.
+                </p>
+                <div class="contact-quick-grid mt-4">
+                  <div class="contact-quick-card">
+                    <span class="contact-quick-icon"><i class="ri-mail-line"></i></span>
+                    <div>
+                      <h4>Email</h4>
+                      <p>salemgomaaibrahim717@gmail.com</p>
+                    </div>
+                  </div>
+                  <div class="contact-quick-card">
+                    <span class="contact-quick-icon"><i class="ri-whatsapp-line"></i></span>
+                    <div>
+                      <h4>WhatsApp</h4>
+                      <p>+20 103 561 9688</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex gap-3 flex-wrap mt-4">
+                  <a href="https://wa.me/201035619688" class="btn-primary-custom" target="_blank" rel="noopener noreferrer">
+                    <i class="ri-whatsapp-line"></i>
+                    Message Now
+                  </a>
+                  <a href="#offered-services" class="btn-outline-custom">
+                    <i class="ri-file-list-3-line"></i>
+                    View Services
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="contact-form-shell h-100">
+                <form id="contactForm">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <input type="text" class="form-control form-control-luxe" id="name" placeholder="Name" required />
+                    </div>
+                    <div class="col-md-6">
+                      <input type="email" class="form-control form-control-luxe" id="email" placeholder="Email Address" required />
+                    </div>
+                    <div class="col-md-6">
+                      <input type="tel" class="form-control form-control-luxe" id="phone" placeholder="Phone Number" />
+                    </div>
+                    <div class="col-md-6">
+                      <select class="form-select form-control-luxe" id="service">
+                        <option value="">Select Required Service</option>
+                        <option value="premium-ui">Premium UI Design</option>
+                        <option value="full-stack">Full-Stack Development</option>
+                        <option value="seo-optimization">Performance & SEO</option>
+                        <option value="support">Post-Launch Support</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <textarea class="form-control form-control-luxe" id="message" rows="5" placeholder="Briefly describe your project"></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn-primary-custom w-100 justify-content-center">
+                        <i class="ri-send-plane-line"></i>
+                        Send Details
+                      </button>
+                    </div>
+                  </div>
+                </form>
+                <div class="form-success">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <h3>Your message is ready</h3>
+                  <p>Your default email app will open to send the inquiry instantly.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container-custom">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-brand">
+              <span class="brand-mark" aria-hidden="true">
+                <span class="brand-mark-core"></span>
+                <span class="brand-initials">SJ</span>
+              </span>
+              <span class="brand-wordmark">
+                <span class="brand-name">Salem Gomaa</span>
+                <span class="brand-tag">DIGITAL CRAFT STUDIO</span>
+              </span>
+            </div>
+            <p class="footer-desc">Full-Stack Laravel developer building elegant, high-performance business websites and platforms.</p>
+            <div class="social-links">
+              <a href="https://github.com/salemgomaa" class="social-link" aria-label="GitHub" target="_blank"><i class="ri-github-fill"></i></a>
+              <a href="https://wa.me/201035619688" class="social-link" aria-label="WhatsApp" target="_blank"><i class="ri-whatsapp-fill"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-6">
+            <h4 class="footer-title">Quick Links</h4>
+            <div class="footer-links">
+              <a href="#hero" class="footer-link">Home</a>
+              <a href="#about" class="footer-link">About</a>
+              <a href="#projects" class="footer-link">Projects</a>
+              <a href="#offered-services" class="footer-link">Services</a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-6">
+            <h4 class="footer-title">More</h4>
+            <div class="footer-links">
+              <a href="#education" class="footer-link">Education</a>
+              <a href="#testimonials" class="footer-link">Testimonials</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h4 class="footer-title">Direct Contact</h4>
+            <div class="footer-links">
+              <span class="footer-link"><i class="ri-mail-line text-accent"></i> salemgomaaibrahim717@gmail.com</span>
+              <span class="footer-link"><i class="ri-map-pin-line text-accent"></i> Cairo, Egypt</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 Salem Gomaa. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp & Cursor -->
+    <a href="https://wa.me/201035619688" class="floating-wa" target="_blank" aria-label="Contact on WhatsApp">
+      <i class="ri-whatsapp-line"></i>
+    </a>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
